@@ -1,0 +1,109 @@
+html body{
+    overflow-x: hidden;
+}
+
+.navbar-default{
+    height:75px;
+    margin-bottom: 0px;
+    border-bottom: solid 5px #2D353D;
+    background-color: white;
+}
+
+#hero{
+    background-image: url("http://localhost:8000/images/builder.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center center;
+    position: relative;
+    
+}
+
+#header_text {
+    
+   background-color: #2D353D;
+   margin-bottom: 15px;
+   
+}
+
+#header_text h2{
+    
+    color:white;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.footer {
+   margin-top: 50px; 
+   background-color: #2D353D;
+   height: 300px;
+   color:white;
+}
+
+.navbar-nav li a{
+    padding-top:25px;
+    padding-bottom:25px;   
+}
+
+.navbar-header{
+padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.panel{
+    
+    border-radius: 2px;
+}
+
+.panel-footer{
+    background-color: #2D353D;
+    color:white;
+    border-bottom-right-radius:2px;
+    border-bottom-left-radius:2px;
+}
+
+#trade_icons{
+    text-align: center;
+}
+
+#trade_icons .fa{
+    font-size: 110px;
+    color: #d3080f;
+    margin: 20px;
+}
+
+.col-md-4 #home_select{ margin-bottom: 40px;}
+
+#icon_title h3{text-align:center;
+margin-bottom: 25px;
+padding-left: 20px;
+    padding-right: 20px;}
+    
+#slide{
+        position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+}
+
+#slide_text{background-color: rgba(211,8,15,0.5);
+    box-sizing: border-box;
+    padding-bottom: 16px;
+
+display: none;
+}
+
+.form-control{border-radius:2px;}
+
+label{
+        font-weight: 100;
+    color: white;
+    font-size: 17px;
+    padding-top: 16px;
+}
+
+#form_hero{
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
