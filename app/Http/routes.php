@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('trades', function () {
-    return view('Trades.trades');
-});
-
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
