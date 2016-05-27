@@ -29,16 +29,38 @@
         </div>
     </div>
     <!--about-->
-    <div class="container">
-    <div class="row" id="icon_title">
-        <div class="col-md-6 ">
-            <h3>About content</h3>
+    <div class="background_color">
+    <div class="container" style="margin-bottom:60px;"> 
+    <div class="row" id="about">
+        <div class="col-md-8 " id="about_box">
+            <h3>We go further than just supplying you a tradesperson</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis maximus mauris a tempus. 
+                Morbi convallis eu erat non viverra. Quisque sodales quam at velit mollis, et tristique diam tincidunt. 
+                In auctor fringilla enim, vitae ultrices urna laoreet sed. Integer ultrices congue sem. 
+                Quisque cursus malesuada purus, ut mattis mi hendrerit ut. Nullam metus orci, fringilla vitae vulputate ut, 
+                sagittis at nibh.pis tempor, a posuere lorem condimentum.</p>
         </div>
-        <div class="col-md-6 ">
-            <h3>BOX</h3>
+        <div class="col-md-4 " id="sell_box">
+            <div class="panel panel-default">
+  <!-- Default panel contents -->
+                <div class="panel-heading"><h3>Why we are different</h3></div>
+                
+
+                <!-- List group -->
+                <ul class="list-group" id="box_list">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
         </div>
     </div>
+    </div>
+    </div>
     <!--icon boxes-->
+<div class="container"> 
     <div class="row" id="icon_title">
         <div class="col-md-offset-3 col-md-6 ">
             <h3>Let us find the best person for the job</h3>
