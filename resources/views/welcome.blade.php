@@ -2,8 +2,17 @@
 
 @section('content')
 <!--header image-->
-<div id="hero">
-    <div class="row" id="slide">
+
+<div class="row" id="hero">
+    <div id="sign_up"><button type="button" class="btn btn-secondary"><i class="fa fa-users" aria-hidden="true"></i> TRADER AREA</button></div>
+    <div class="container">
+        <div class="col-md-6 ">
+            <div class="panel panel-default">
+                <div class="panel-body">A Basic Panel</div>
+            </div>
+        </div>
+</div>    
+    <!--<div class="row" id="slide">
         <div class="col-md-offset-3 col-md-6" id="slide_text">
             {!! Form::open(array('id' => 'form_hero', 'class'=>'form')) !!}
             {{ Form::label('firstname', 'Trade')}}
@@ -12,15 +21,10 @@
     {{ Form::text('surname', null, array('class' => 'form-control', 'required' => '','maxlength'=>'255'))}}
     {{ Form::label('surname', 'Contact Number')}}
     {{ Form::text('surname', null, array('class' => 'form-control', 'required' => '','maxlength'=>'255'))}}
-    {{ Form::submit('FIND A TRADER', array('class' => 'btn', 'id' => 'create_btn',
-    'style' => 'width:100%;   
-    margin-top: 20px;
-    border-radius: 2px;
-    background-color: #2D353D;
-    color:white;'))}}
+    {{ Form::submit('FIND A TRADER', array('class' => 'btn', 'id' => 'create_btn_home'))}}
 {!! Form::close() !!}
         </div>      
-    </div>
+    </div>-->
 </div>
 <!--header text-->
     <div class="row" id="header_text">
@@ -41,20 +45,15 @@
                 sagittis at nibh.pis tempor, a posuere lorem condimentum.</p>
         </div>
         <div class="col-md-4 " id="sell_box">
-            <div class="panel panel-default">
-  <!-- Default panel contents -->
-                <div class="panel-heading"><h3>Why we are different</h3></div>
-                
-
-                <!-- List group -->
-                <ul class="list-group" id="box_list">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-            </div>
+            {!! Form::open(array('id' => 'form_hero', 'class'=>'form')) !!}
+                            {{ Form::label('firstname', 'Name', array('id' => 'home_label'))}}
+                            {{ Form::text('firstname', null, array('class' => 'form-control', 'required' => '','maxlength'=>'255'))}}
+                            {{ Form::label('surname', 'Contact Number', array('id' => 'home_label'))}}
+                            {{ Form::text('surname', null, array('class' => 'form-control', 'required' => '','maxlength'=>'255'))}}
+                            {{ Form::label('surname', 'Message' , array('id' => 'home_label'))}}
+                            {{ Form::textarea('surname', null, array('class' => 'form-control', 'required' => '','maxlength'=>'255'))}}
+                            {{ Form::submit('FIND A TRADER', array('class' => 'btn', 'id' => 'create_btn_trade'))}}
+                        {!! Form::close() !!}
         </div>
     </div>
     </div>
@@ -68,67 +67,79 @@
     </div>
     <div class="container">
     <div class="row">
+        <a href="/trades/Electricians">
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="panel panel-default" id="home_select">
                 <div class="panel-body" id="trade_icons">
-                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    <img src="http://localhost:8000/images/electrician.png"></i>
                 </div>
                 <div class="panel-footer">
-                    TRADE
+                    ELECTRICIAN
                 </div>
             </div>
         </div>
+        </a>
+        <a href="/trades/Builders">
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="panel panel-default" id="home_select">
                 <div class="panel-body" id="trade_icons">
-                    <i class="fa fa-ship" aria-hidden="true"></i>
+                    <img src="http://localhost:8000/images/builder.png"></i>
                 </div>
                 <div class="panel-footer">
-                    TRADE
+                    BUILDER
                 </div>
             </div>
         </div>
+        </a>
+        <a href="/trades/Carpenters">
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="panel panel-default" id="home_select">
                 <div class="panel-body" id="trade_icons">
-                    <i class="fa fa-shield" aria-hidden="true"></i>
+                    <img src="http://localhost:8000/images/carpenter.png"></i>
                 </div>
                 <div class="panel-footer">
-                    TRADE
+                    CARPENTER
                 </div>
             </div>
         </div>
+        </a>
         <!--bottom 3 icon boxes-->
+        <a href="/trades/Painters">
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="panel panel-default" id="home_select">
                 <div class="panel-body" id="trade_icons">
-                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <img src="http://localhost:8000/images/painter.png"></i>
                 </div>
                 <div class="panel-footer">
-                    TRADE
+                    PAINTER
                 </div>
             </div>
         </div>
+        </a>
+        <a href="/trades/Plumbers">
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="panel panel-default" id="home_select">
                 <div class="panel-body" id="trade_icons">
-                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                    <img src="http://localhost:8000/images/plumber.png"></i>
                 </div>
                 <div class="panel-footer">
-                    TRADE
+                    PLUMBER
                 </div>
             </div>
         </div>
+        </a>
+        <a href="/trades/Roofers">
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="panel panel-default" id="home_select">
                 <div class="panel-body" id="trade_icons">
-                    <i class="fa fa-tag" aria-hidden="true"></i>
+                    <img src="http://localhost:8000/images/roofer.png"></i>
                 </div>
                 <div class="panel-footer">
-                    TRADE
+                    ROOFER
                 </div>
             </div>
         </div>
+        </a>
     </div>
 </div>
 @endsection

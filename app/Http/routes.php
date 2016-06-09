@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('sign-up', function () {
+    return view('sign_up');
+});
+
+Route::get('how-it-works', function () {
+    return view('works');
+});
+
 Route::resource('trades', 'TradesController');
 
 Route::auth();

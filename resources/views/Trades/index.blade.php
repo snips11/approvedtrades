@@ -14,7 +14,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default" id="home_select">
                     <div class="panel-body" id="trade_icons">
-                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                        <img src="{{$trade->icon}}">
                     </div>
                     <div class="panel-footer">
                         {{$trade->trade}}

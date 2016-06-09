@@ -12,15 +12,17 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Checkaslayer
+                    <img src="/images/logo.png">
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('/trades') }}">Trades</a></li>
+                    <li><a href="{{ url('/how-it-works') }}">How it works</a></li>
+                    <li><a href="{{ url('/sign-up') }}">Trader sign up</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
